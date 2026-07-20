@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokes & Cat Facts API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>😂 Jokes & Cat Facts 🐱</h1>
+            <p>Your daily dose of humor and feline wisdom!</p>
+        </header>
+
+        <main>
+            <!-- Joke Section -->
+            <section class="api-section">
+                <h2>Random Joke</h2>
+                <button id="getJokeBtn" class="btn-primary">Get a Joke</button>
+                <div id="jokeDisplay" class="display-box">
+                    <p>Click the button to get a joke!</p>
+                </div>
+            </section>
+
+            <!-- Cat Facts Section -->
+            <section class="api-section">
+                <h2>Cat Fact</h2>
+                <button id="getCatFactBtn" class="btn-primary">Get Cat Fact</button>
+                <div id="catFactDisplay" class="display-box">
+                    <p>Click the button to get a cat fact!</p>
+                </div>
+            </section>
+
+            <!-- Add Custom Joke Section -->
+            <section class="api-section">
+                <h2>Submit Your Own Joke</h2>
+                <form id="jokeForm">
+                    <textarea id="jokeInput" placeholder="Write your joke here..." rows="3"></textarea>
+                    <button type="submit" class="btn-secondary">Submit Joke</button>
+                </form>
+                <div id="submissionResult" class="display-box hidden">
+                    <p id="resultMessage"></p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Created with ❤️ by Team API</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
