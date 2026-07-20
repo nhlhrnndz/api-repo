@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jokes & Cat Facts API</title>
+    <title>😂 Jokes & Cat Facts</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -39,6 +39,7 @@
                     <textarea id="jokeInput" placeholder="Write your joke here..." rows="3"></textarea>
                     <button type="submit" class="btn-secondary">Submit Joke</button>
                 </form>
+                <!-- THIS DIV WAS MISSING - CRITICAL FIX! -->
                 <div id="submissionResult" class="display-box hidden">
                     <p id="resultMessage"></p>
                 </div>
@@ -50,6 +51,7 @@
         </footer>
     </div>
 
-    <script src="app.js"></script>
+    <!-- Move script to BOTTOM of body with defer -->
+    <script src="app.js" defer></script>
 </body>
 </html>
